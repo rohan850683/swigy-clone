@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Swiggy.in</title>
+    <link rel="stylesheet" href="swiggy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+
+}
+
+.logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap: 4.5rem;
+    
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.nav-link{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nav-link {
+    color: black;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+/* 
+.nav-link span{
+    font-family: sans-serif;
+    font-weight: 700;
+    color: black;
+} */
+
+.nav-link:hover{
+    color:orangered ;
+} 
+
+.on-mind{
+    max-width:1000px ;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.mind{
+    padding-left: 8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.arrow i{
+    font-size: 1.5rem;
+}
+
+.arrow{
+    display: flex;
+    gap: 1rem;
+}
+
+.fa-circle-arrow-left:hover{
+    color:orangered;
+}
+
+.fa-circle-arrow-right:hover{
+    color: orangered;
+}
+
+.pizza{
+    height: 180px;
+   min-width: 144px;
+}
+
+
+
+.food{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1000px;
+    margin-left: 7.5rem;
+    overflow-x: auto;
+}
+
+.food::-webkit-scrollbar{
+    width: 0;
+}
+
+
+
+.chain{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1000px;
+    margin-left: 7.5rem;
+    overflow-x: auto;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.chain::-webkit-scrollbar{
+    width: 0;
+}
+
+.hut{
+   
+   width: 273px;
+   height: 182px;
+   border-radius: 10px;
+}
+
+.pizza:hover{
+    height: 200px;
+    width: 250px
+}
+
+
+.pizza-hut:hover{
+         transform: scale(0.9,0.9);
+}
+
+.pizza-hut{
+    height: 285px;
+    width: 321px;
+}
+
+
+.card2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 0.5rem 0.5rem;   
+    gap: 1rem;
+    margin-top: 1.5rem;
+    min-width: 110px;
+  
+}
+
+.card2:hover{
+    background-color: orangered;
+    font-family: sans-serif;
+}
+
+
+.cardcontainer{
+    overflow-x: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.cardcontainer::-webkit-scrollbar{
+    width: 0;
+}
+.fooding{
+    max-width: 1000px;
+    margin-left: 7.5rem;
+}
+
+
+.help{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1000px;
+    margin-left: 7.5rem;
+   /* gap: 1rem; */
+
+}
+
+.cafe{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 270px;
+    margin-left:1.5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.other{
+    text-align: center;
+    width: 184px;
+    /* height: 19px; */
+    /* padding-bottom:0.5rem ; */
+}
+
+.cafe:hover{
+    transform: scale(0.9,0.9);
+    background-color: orangered;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.border{
+
+    width: 52%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer{
+    margin-top: 1rem;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color:#f0f0f5;
+}
+
+
+.footer-container a{
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+ 
+}
+.adiv{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+   }
+
+   .study:hover{
+    transform: scale(1.2);
+}
+
+.project:hover{
+    transform: scale(1.2);
+}
+
+.faq:hover{
+    transform: scale(1.2);
+}
+  
+
+.study-img:hover{
+    transform: scale(1.2);
+}
+
+.study-img{
+    border-radius: 10px;
+}
+
+.sub{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background-color: #7a7a81;
+}
+
+.term:hover{
+
+   font-weight: 900;
+}
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Nav-bar start -->
+        <div class="navbar">
+            <div class="logos">
+                <a href="#">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAn1BMVEX/UgD/////TwD/RQD/SgD/TQD/pYb/0sH/5Nr/SAD/RAD/jGb//vz/QQD/dkn/bzr/gVP/8+3/+fX/lXL/iF//VgD/8+7/u6X/WBn/39P/mnb/7ef/wq3/YBr/2s3/ybj/tp3/ZSf/r5X/x7X/bDb/6N//1cr/e1P/WwD/YST/xbD/qYz/aTD/vq//e0z/sZX/nob/oH7/ckH/f1n/i2IVSVeIAAAGh0lEQVR4nO2d23biOgyGiR0XnCYthEMLaaC00Jke9/Tw/s+2Ew4t0DixTTKSO/ruZq1e8I9lSZZkp9UiCIIgCIIgCIIgCIIgCIIgCIIgCIIgCKIYlgH9GxqBCZ9LP9N2mTFsrf4lfoxU4Qds8X5yO+0kcehlhPFyfHcx+TWX3HdfpeDR20k7WSk7JF5e9dNIuiySyejsalQk7pOw8/g7cnUlhby/6ZXK2zDuD11cSBF0Zzry1vZ6PQ8c08iil6m2vpW1zlLukEYm07aRvhXXLQn9w3XxW9fm+jLivhTQv12LYJBYCcyYzh1YRsEvbPWtljGCFlCFnC+PEJgxE7gtlQ8KsxcTlk+YLTU6OVZfxqiLV2JwzBbcYcChlSgIHuoR6Hl9nBLlVV0CkUrkNQr0vFN8ezG4qVOg56FzN3xSr0AvXOCKi+KtZoGelwwxnTXYpXUqqqaNydtIi8NSNY94JMq6N+GGJyxbkQ2PTkaL6WDxp4FZwcKAGxx26vebEuiFKOyUtRrwo1tmGBZRPpr/8OnzWPMvX+AXkQ1jY4GTiEeaxaoxfFVD/mcscBnlzShN2+6CLyI3X8JVsuJ39P54DL0T5auxQDOF3hvwIkoLR2qmENidindzgYYK40vQMwa/bVyh1/cBBbKhVoPwOIVTSDMVAwuBpgq9FqCZcv0m6BEKJ4Bmym2M1FhhOwATyFIbgcYKQ7iN6Nu1KUwVAgZ9q1hhofAP2EaM7E6Gxgof4MzUSqC5wiWUqxFnf0lhbwik0LZAY6wwToFivk39wkphD8qXSsuWr7HCCyhPY5ezmSsEM9JWcPd3FJ7BhUMDQ7NX2JnDJd6WAd9IYTKBnHVrXGHy8EtAHvBbkeWAl5bCzu3rk+DAdbZAtzRfpPAw1IRhHMejUdJpX9386aZRhGGOP7Ds/K7b1+LtbJfFYp7+bskoChBdxbAdEdo06MUeDONtmqOyNifwLdv3U/h+kibixU6h98SFAybayuvBlgrjx+4n5zlpmg6HInMzGUHmanJfg0Kxbcgv0d5bjtuz55v+y9Ol4D5877CRQaGt2M7d65kPPG9i60z1SR5hB9vFedMKPW/0ApqZyoaGoXYJ55A+h1uegY24gNyLzW/EjCmkwgYGZ78Dm+SJI+8A6fAMGjHqHdAv5gM2Xli1uY2I72HzN1F+VbsG7oDPWs2b6StoxM/WsNuwwBCs4L0lshpW0AdwTGGDtLvVrM0p+AmKPTUqMEZQ05GWVVM9wBprOzQ4qp8BerDYYDe9pwlo1v3JURfwKwCdvPyELRoTOILWtiFq7lYQCiNtMK8JgZPuL+qvm66Bz2e2+BZXEnTAECq2NBIwMHVwmqlIDcBT0i9Yan43qJIxEke6pomof4oi2m9hae3V7wSRjebIOl6m2eMVlZFmcMsRMBU9NLFwi1jUa6c4cu49ZK3nxASbjebwOrci5E0gNcGgtqjYQZSv7eKnFzWVwHHFwh0YH75PTsq51vhPAL/eXAITfjmSX1an6e/Ior0hvDJNR/DMwFGI0yqF524vYbVCFM99VMBWL5KvB/J2WXnIKoUxpqN9MYIvJrPpsiA4tnOJVQov0GWkh8gXdSdjwSoVxpBXt7XwP9S/PjyvVniCMSPdg5VEdA2FCfpIUVqy0VDoQLAve+2kWmEbvY1m+7BEQLVCZO9BFhOpXWmlQiQPtFUg1N22KoU9rIemA9TF0yqFaI+FB6j73hUKQV+iMUJZlCpXiO3Z2TK4oitcrvDamSXMRMxVq5QrVKR1CfqEdJdAMQs2yFwJV7wa3XXEzWxgxZnN1JfBfbEfaqNPSPdRZTbLR0WtDXoU2BzTK7ToWk2VsEujAjiaJ4MNMHsg2snyGjcYy7xGX5spQsy1O4ooe2kaqALfdxC8FmyH7p2hK4fStX00b2COnErX9tH7rIdj6do+UsNObx1L1/bReNINf427HF554WTgso3mVNnpg9M2mlNSectx2Y9uUR2G17y7bqM5ZS9CXTlvozniTZmfJu6b6Ar18IWz+eghqk6GS+XDchQTxJ0fsQnXFJ/3UXwmpy6KPuqFv2FvAht+qyG60O01wT+8/TWC/WxFA0QHTUWEH6k8lv2Sxs9IZvbZG+Zf/rwVzOBfd/hC6A8ANcRXK8O9JoUeTGz6aq410vTZVG16CF6XbYrV/a/w7GduwjX+R/v2/Ccc69UIDvk+N0EQBEEQBEEQBEEQBEEQBEEQBEEQ/zb/A9udaLG3QG8OAAAAAElFTkSuQmCC"
+                        alt="" class="logo">
+                </a>
+            </div>
+
+            <div class="nav">
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-box"></i>
+                    <span> Swiggy coprate</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Search</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-sun"></i>
+                    <span>Offers</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <span> Help</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-user"></i>
+                    <span> Sign in</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span> Cart</span>
+                </a>
+
+            </div>
+
+        </div>
+        <!-- navbar close -->
+
+        <!-- bootom -->
+        <div class="bottom">
+
+            <div class="on-mind">
+                <h2 class="mind">
+                    What's On Your Mind?
+                </h2>
+                <div class="arrow">
+                    <i class="fa-solid fa-circle-arrow-left" class="arrows"></i>
+                    <i class="fa-solid fa-circle-arrow-right" class="arrows"></i>
+                </div>
+
+            </div>
+
+            <div class="food">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Pizzas.png"
+                    alt="" class="pizza">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/17/58760e8e-324f-479e-88fa-31800120ea38_Rolls1.png"
+                    alt="" class="pizza">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_burger.png"
+                    alt="" class="pizza">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Momos.png"
+                    alt="" class="pizza">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Biryani.png"
+                    alt="" class="pizza">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Chinese.png"
+                    alt="" class="pizza">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/f1263395-5d4a-4775-95dc-80ab6f3bbd89_samosa.png"
+                    alt="" class="pizza">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_cake.png"
+                    alt="" class="pizza">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Shake.png"
+                    alt="" class="pizza">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/f1263395-5d4a-4775-95dc-80ab6f3bbd89_pasta.png"
+                    alt="" class="pizza">
+            </div>
+
+        </div>
+
+        <div class="lower">
+
+            <div class="on-mind">
+                <h2 class="mind">
+                    Top Restaurant Chains in Faridabad
+                </h2>
+                <div class="arrow">
+                    <i class="fa-solid fa-circle-arrow-left" class="arrows"></i>
+                    <i class="fa-solid fa-circle-arrow-right" class="arrows"></i>
+                </div>
+            </div>
+            <!-- product -->
+            <div class="chain">
+
+                <div class="pizza-hut">
+                    <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/7/16/dfd2d79f-7707-4195-a1bb-13c7cb3d16ad_23119.jpg"
+                        alt="" class="hut">
+                    <h3>Pizza Hut</h3>
+                    <i class="fa-solid fa-circle-dot"></i><span>3.9 • 40-45 mins</span>
+                    <h4>Pizza</h4>
+                    <h5>Sector 30-31</h5>
+                </div>
+
+                <div class="pizza-hut">
+                    <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e0839ff574213e6f35b3899ebf1fc597"
+                        alt="" class="hut">
+                    <div class="c">
+                        <h3>Chinese Wok</h3>
+                        <i class="fa-solid fa-circle-dot"></i><span>3.9 • 40-45 mins</span>
+                        <h4>Pizza</h4>
+                        <h5>Sector 30-31</h5>
+                    </div>
+                </div>
+
+                <div class="pizza-hut">
+                    <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/11/29/f0a3db7e-9c27-4c86-ab2c-77471c09821e_28796.jpg"
+                        alt="" class="hut">
+                    <h3>Domino's</h3>
+                    <i class="fa-solid fa-circle-dot"></i><span>3.9 • 40-45 mins</span>
+                    <h4>Pizza</h4>
+                    <h5>Sector 30-31</h5>
+                </div>
+
+                <div class="pizza-hut">
+                    <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/10/22/31de4028-51e3-49b0-84a8-19c2b5ab1d65_242283.JPG"
+                        alt="" class="hut">
+                    <h3>MC Donald's</h3>
+                    <i class="fa-solid fa-circle-dot"></i><span>3.9 • 40-45 mins</span>
+                    <h4>Pizza</h4>
+                    <h5>Sector 30-31</h5>
+                </div>
+
+                <div class="pizza-hut">
+                    <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/11/5/47c54923-464a-418b-a439-a24574d8e878_39265.JPG"
+                        alt="" class="hut">
+                    <h3>KFC</h3>
+                    <i class="fa-solid fa-circle-dot"></i><span>3.9 • 40-45 mins</span>
+                    <h4>Pizza</h4>
+                    <h5>Sector 30-31</h5>
+                </div>
+            </div>
+        </div>
+        <!-- cart start -->
+        <div class="fooding">
+
+            <div class="online">
+                <h2> Restaurants with online food delivery in Faridabad</h2>
+            </div>
+
+            <div class="cardcontainer">
+
+                <div class="card2">
+                    <span>Filter</span>
+                    <i class="fa-solid fa-mug-hot"></i>
+                </div>
+
+                <div class="card2">
+                    <span>Sort-by</span>
+                </div>
+
+                <div class="card2">
+                    <span>Fast Devlivery</span>
+                </div>
+
+                <div class="card2">
+                    <span>New on Swiggy</span>
+                </div>
+
+                <div class="card2">
+                    <span>Rating4.0</span>
+                </div>
+
+                <div class="card2">
+                    <span>Pure Veg</span>
+                </div>
+
+                <div class="card2">
+                    <span>Offers</span>
+                </div>
+
+                <div class="card2">
+                    <span>Rs.300-Rs.600</span>
+                </div>
+
+                <div class="card2">
+                    <span>Less Than</span>
+                </div>
+
+                <div class="card2">
+                    <span>Filter</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Order -->
+        <div class="chain">
+
+            <div class="pizza-hut">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/i5albjqz3svpj0lravkf"
+                    alt="" class="hut">
+                <h3>Giani</h3>
+                <i class="fa-solid fa-circle-dot"></i><span>3.9 • 40-45 mins</span>
+                <h4>Pizza</h4>
+                <h5>Sector 30-31</h5>
+            </div>
+
+            <div class="pizza-hut">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/11/4/bca2e8b3-b79c-4930-a07e-15364b6e943c_619124.JPG"
+                    alt="" class="hut">
+                <div class="c">
+                    <h3>Eat-Fit</h3>
+                    <i class="fa-solid fa-circle-dot"></i><span>3.9 • 40-45 mins</span>
+                    <h4>Pizza</h4>
+                    <h5>Sector 30-31</h5>
+                </div>
+            </div>
+
+            <div class="pizza-hut">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/12/9/eb90a9ee-d943-4a61-a3de-0f3176aa287b_751420.JPG"
+                    alt="" class="hut">
+                <h3>Subway</h3>
+                <i class="fa-solid fa-circle-dot"></i><span>3.9 • 40-45 mins</span>
+                <h4>Pizza</h4>
+                <h5>Sector 30-31</h5>
+            </div>
+
+            <div class="pizza-hut">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/d8d4e708a41f011361c949d44990d5e0"
+                    alt="" class="hut">
+                <h3>Samosa Party</h3>
+                <i class="fa-solid fa-circle-dot"></i><span>3.9 • 40-45 mins</span>
+                <h4>Pizza</h4>
+                <h5>Sector 30-31</h5>
+            </div>
+
+            <div class="pizza-hut">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/8/9/3abca8f3-2357-4ab0-9be7-0641a50d1613_45177.jpg"
+                    alt="" class="hut">
+                <h3>Burger King</h3>
+                <i class="fa-solid fa-circle-dot"></i><span>3.9 • 40-45 mins</span>
+                <h4>Pizza</h4>
+                <h5>Sector 30-31</h5>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="chain">
+
+        <div class="pizza-hut">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/7/16/dfd2d79f-7707-4195-a1bb-13c7cb3d16ad_23119.jpg"
+                alt="" class="hut">
+            <h3>Pizza Hut</h3>
+            <i class="fa-solid fa-circle-dot"></i><span>3.9 • 40-45 mins</span>
+            <h4>Pizza</h4>
+            <h5>Sector 30-31</h5>
+        </div>
+
+        <div class="pizza-hut">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e0839ff574213e6f35b3899ebf1fc597"
+                alt="" class="hut">
+            <div class="c">
+                <h3>Chinese-wok</h3>
+                <i class="fa-solid fa-circle-dot"></i><span>3.9 • 40-45 mins</span>
+                <h4>Pizza</h4>
+                <h5>Sector 30-31</h5>
+            </div>
+        </div>
+
+        <div class="pizza-hut">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/11/29/f0a3db7e-9c27-4c86-ab2c-77471c09821e_28796.jpg"
+                alt="" class="hut">
+            <h3>Domino's</h3>
+            <i class="fa-solid fa-circle-dot"></i><span>3.9 • 40-45 mins</span>
+            <h4>Pizza</h4>
+            <h5>Sector 30-31</h5>
+        </div>
+
+        <div class="pizza-hut">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/10/22/31de4028-51e3-49b0-84a8-19c2b5ab1d65_242283.JPG"
+                alt="" class="hut">
+            <h3>MC Donalds</h3>
+            <i class="fa-solid fa-circle-dot"></i><span>3.9 • 40-45 mins</span>
+            <h4>Pizza</h4>
+            <h5>Sector 30-31</h5>
+        </div>
+
+        <div class="pizza-hut">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/11/5/47c54923-464a-418b-a439-a24574d8e878_39265.JPG"
+                alt="" class="hut">
+            <h3>KFC</h3>
+            <i class="fa-solid fa-circle-dot"></i><span>3.9 • 40-45 mins</span>
+            <h4>Pizza</h4>
+            <h5>Sector 30-31</h5>
+        </div>
+    </div>
+ </div>
+
+ <div class="chain">
+
+    <div class="pizza-hut">
+        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/70ca2252b2283d9cd510d484751d84a1"
+            alt="" class="hut">
+        <h3>Hulk Burger</h3>
+        <i class="fa-solid fa-circle-dot"></i><span>3.9 • 40-45 mins</span>
+        <h4>Pizza</h4>
+        <h5>Sector 30-31</h5>
+    </div>
+
+    <div class="pizza-hut">
+        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/12/3/8e4d5982-50ba-45cc-a74a-64f4c71f3c88_809980.JPG"
+            alt="" class="hut">
+        <div class="c">
+            <h3>Costa Coffee</h3>
+            <i class="fa-solid fa-circle-dot"></i><span>3.9 • 40-45 mins</span>
+            <h4>Pizza</h4>
+            <h5>Sector 30-31</h5>
+        </div>
+    </div>
+
+    <div class="pizza-hut">
+        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/64fd45fd9f44c1737bc446e470bed666"
+            alt="" class="hut">
+        <h3>Wow Momo's</h3>
+        <i class="fa-solid fa-circle-dot"></i><span>3.9 • 40-45 mins</span>
+        <h4>Pizza</h4>
+        <h5>Sector 30-31</h5>
+    </div>
+
+    <div class="pizza-hut">
+        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/8ba3b8fb2bd2cbad9641aab92a15a907"
+            alt="" class="hut">
+        <h3>Grill Inn</h3>
+        <i class="fa-solid fa-circle-dot"></i><span>3.9 • 40-45 mins</span>
+        <h4>Pizza</h4>
+        <h5>Sector 30-31</h5>
+    </div>
+
+    <div class="pizza-hut">
+        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/bqaw3yrarsswd1vogwko"
+            alt="" class="hut">
+        <h3>Red Chilli</h3>
+        <i class="fa-solid fa-circle-dot"></i><span>3.9 • 40-45 mins</span>
+        <h4>Pizza</h4>
+        <h5>Sector 30-31</h5>
+    </div>
+</div>
+</div>
+
+
+    </div>
+    <!-- best food -->
+    
+    <div class="border">
+        <h2>Best Place to Eat Across Cities</h2>
+    </div>
+    <div class="help">
+        <div class="cafe">
+            <div class="other"> Best Restaurant in Delhi</div>
+        </div>
+        <div class="cafe">
+            <div class="other">
+                Best Restaurant in Faridabad
+            </div>
+        </div>
+
+        <div class="cafe">
+            <div class="other">
+                Best Restaurant in Uttar Pradesh
+            </div>
+        </div>
+
+        <div class="cafe">
+            <div class="other">Best Restaurant in Punjab</div>
+        </div>
+
+        <div class="cafe">
+            <div class="other">Best Restaurant in Gurgam</div>
+        </div>
+        
+        <div class="cafe">
+            <div class="other">Best Restaurant in Noida</div>
+        </div>
+
+            <div class="cafe">
+                <div class="other"> Best Restaurant in Mumbai</div>
+            </div>
+            <div class="cafe">
+                <div class="other">
+                    Best Restaurant in Bihar
+                </div>
+            </div>
+    
+            <div class="cafe">
+                <div class="other">
+                    Best Restaurant in Jammu & Kashmir
+                </div>
+            </div>
+    
+            <div class="cafe">
+                <div class="other">Best Restaurant in Kerla</div>
+            </div>
+    
+            <div class="cafe">
+                <div class="other">Best Restaurant in Kolkata</div>
+            </div>
+            
+            <div class="cafe">
+                <div class="other">Best Restaurant in Odisa</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+     <footer>
+        <div class="footer-container">
+            <a href="#">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAnFBMVEX3iB/////4kC33ggD3gAD3fwD3hhn2hRH2gwv93cT8u4n6rHX3hhH///381LL/9un8xpj5wpj4jCf/+fH948v948/97eL2ewD9zaX/9uz92Lv96df5n1H5jB/4kzX/+/f7rW/6v4/4m0n7s3n8qGX5o1n3mU34lj/4sXL4kzT8uYP7xqD5olP3r3r7wJX5nlj8zqr807v2dAD6qW2Se8tCAAAIDUlEQVR4nO2de3uiOhCHgUCIPUSreEO0Xqq1q7ttz/b7f7eTSUAUQax9dj0M8/7Ren/gxzBJJpOJZREEQRAEQRAEQRAEQRAEQRAEQRAEQRDEveCc+wrO730g/w+4z9js6eV9vV5vXrYz5oqmCyM8ZzGOo7ltkJ24/bxlrLmycBY8xEYOaWfI4VvPa6YqnG3bdhmtDfPvfYB/H3c7KVUErGawcRtmKz7by1JJEiaOuPdh/k3YqlOliCJ89e59oH8Pd3mFIkC7KS0QF+W+NU/ca4Sr5aJvV/oSg5R29KMBonAWX20lQOjgF4UNviSJbUc97D6FXe9LUuIAtyhs+WVJVOuDuknm7zdIYts7du8D/4Ow6CZNJGKX4u5vkkQNCd17H/qfgm+v7Jecs8baILNWVWdtXvZGjNSj8Jcqa2j/eC9TZYFzjFzdNZn53kfJWwOUhsJ7Vd5EBpYo9cJbjE2P2FWZyUVNxhgNxet/S5MIY2dWVEmiNXksfRfhzeMvvqnJG76Wh+0rI0mXNZng68tWu5MKTSJ8mrjVw7/LmszRDQT5LPymJvYUnSbb0rHMFZqAJ+rgs5Np9ZhYzsrtRI4tbJJYfFMpidKEF3V252F//9NDOHt8TdRR2Yll7dqDYULcb3cffm0c5uKcDuSrq+4d1d1lrss0roIJxAld/OkKHztDe/rFBFe0xT0mcuDO+/OG1Q5l8JDj1z+fU8d1sQZj3fK0pMvGM48mixFOVdjbbZLov+ECY0TJ8q/ooFxgiS9SoGDf0gTnVKD3tbyTPK8YDYXdOjFqeMSoCZ9+SxOcDsWv7rVdAOeMMWt9RxMHo4+1RHXkvpwOSjOxeO8bN08LZaft9u498IzSxSpDWV+bLHyGRDgLaLgxnc3Gm5OjNOneqgnO3okmuFES+YT11lFe9utZ1JoBxkSLBL69yUqwZrMZbmuO54jN5Lrw/TldtK2O5pZFCPIHXg+rcavzUPK08WWe5BBfXdQkV8jNRLkUb/q2HwP7fTdDPSnxvxPUHjaBC5ZwNOOnno2KAyz4zeQCxcnnrSaYyQGoBGNmhc2kcLEmKCcxCuHM5dv3z+eH5dtyt3hxIOWmQBNpf+DumxzBVt2sEowiHCivUWQn+LIdyyhIqw+DQk3emmMm582uMogCTYaNkcTy1+d2UqjJGvOAOMd50YJwVqBJo9phf5ELV8v57Nyf4EwmKMXNG0pYoMlDc7wJcBZxK2h38AbrS/ByAkSM56O1jRvo5BdqyPWInaZGLtGHTc4Qz6duVrZOJYlH9z7CO+BezL3AOxt6Cd67FK9eNs3BGtTdUwrW3IpKvNK7J2xWb+0I7sxLsi+aNM7JkW97UsbNa4YzvMJYfdxcK1HwomU9c8SZFdcgCpYmoM4iuIbzlPPHJgVNiglyUYN+k/1rAlQoO2p88Je8vIaT/Gq5wpkw/VWyUIq0cS5yu4HMpYzJvyYkRQ9lc0d+BSQuJcZZl+BGdP2+COcanZthsS231OScwJ2owfGBErggKyEIgiAIgrgDt5TMKvoOntJbLIDt3czp+EFgNozh1uEF3W3l6RsaoTcFZCe7awr4Cc6Sfr/6uJ/7yfrAg+5Qyk4boqt81el0Ykc/kqbiaaxeUOfvf6p30uxxzhatyLbDeJlt4uXzXT+UdmewA6H8V/ghPfsjntXDSb1GSDrZUybjf52ABBUH3IkOG+na1BN48I99SCHwnUO0LdokoojpIU9nqKWApx8Q2BewmV69aqKIw4pzSNRjUAF14Fp8pv6rc/Ng4ww47yNNuHM0I9gxBuAfF4nsq4+JV3ikZNb1Q2u26tiDy9hqSzt89eF8wWZ6Jomv5XFYjh7CCR1pIrSVRJO2MoXQ5ChxHoKpDdsTdUsNtffwBhCh9CwG6Tw1y2Ty4Jjd0XIy01dcF+h+dB192R32AHcAKJFpYkq975nLRs9RMp9htuvZeS5j3dg4Z74ClaZe165fkrW2k8F0lOy5qzOSOr/NNGh7BCahEz0zTXRyW0t/XMwSN6Hd0CN4D34ohakTEQYsrGHCGzP7o8TrpDywAAv5aUp9zH/KdMFFpgmcJbgYaJyFaah1NB/WFvvmNWMoT9KWEu7Bdt1i/DwtddI3U516TT5c9ij5b4p3ZJqAi5GB0jLqAFDgX5cmHgaW29cvhaZCW7r/VQ0TMrjTNwUsY3N5N/BEXeKNmRxODD/TRCSa/JtIeaRJWmU12VklqcpUx1Qm392YFecP+vIGZnPe1mhidmxO+iSZJnCmU/9EE2iJ5w7PaaI9tD2vYU1i9rRi3tPgcPpsrM/L8Vf6/y7pgGT+BAScuOKhNZnIJOFCREq/pcfGrUk/08Ry9b1XN2+iehZLGfWY926nqytMjW7VfOpmeR6Yzx3ZySvcWo/MG41+p5q4WsdndzQaKc+aaQK+qX51uHTPPtq/DQ9dMigLKqEB1mUf0/3+zvts48d9P7l30mUK8bg7ju28JrXq1gPHpfuTKwpuwPRE4mygcty33x769qmd5OrwftRbE8s77PGQFuqADv0UTsRf22HqDI7HgCIbA9rzVMhpVr0s2iReta6aWN6mD33NYbZ9qtcfGHmC4aG75X+GUZg+4+x5ABJAsCD1FoLvYrCfaLALUhXcD/WlRf2aHQgn9VYvT+zIFTpJ2gB3etmLvd7RE8F625dt7ySoJJizXW1nrjj5ztGXagXnp0HDwzN++qH8l6p+p/BDBEEQBEEQBEEQBEEQBEEQBEEQBEEQxBdxiDz/AWfWdn6iufFgAAAAAElFTkSuQmCC" alt="" class="study-img">
+            </a>
+    
+            <div class="adiv">
+                <h4 class="faq">Company</h4>
+                <a href="#" class="faq"> Overview</a>
+                <a href="#" class="faq">FAQ</a>
+                <a href="#" class="faq"> Privacy policy</a>
+                <a href="#" class="faq"> Contact us</a>
+                <a href="#" class="faq"> About us</a>
+            </div>
+    
+            <div class="adiv">
+                    <h4 class="faq">Portal</h4>
+                    <a href="#" class="faq">Overview</a>
+                    <a href="#" class="faq">Satus page</a>
+                    <a href="#" class="faq">Students</a>
+                    <a href="#" class="faq">Expert faculty</a>
+                    <a href="#" class="faq">Job assistance</a>
+            </div>
+    
+                <div class="adiv">
+                                <h4 class="faq">Meal</h4>
+                                 <a href="#" class="faq">Veg</a>
+                                 <a href="#" class="faq">Non-Veg</a>
+                                    <a href="#" class="faq">South-Indian</a>
+                                 <a href="#" class="faq">Chinese</a>
+                                 <a href="#" class="faq">Normal</a>
+    
+                    </div>
+    
+                    <div class="adiv">
+                        <h4 class="faq">Social-Media</h4>
+                        <a href="#" class="faq">Facebook  <i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="faq">Instagram <i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="faq">Linked In <i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="faq">Twitter   <i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="faq">Telegram  <i class="fa-brands fa-telegram"></i></a>
+                </div>
+            
+         </div>
+    
+     </footer>
+
+
+     <!-- Sub Footer -->
+
+     <div class="sub">
+        <div class="term">Privacy</div>
+        <div class="term">Terms&Condition</div>
+        <div class="term">Security</div>
+     </div>
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
